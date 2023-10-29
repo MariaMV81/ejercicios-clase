@@ -25,3 +25,5 @@ function sum7(array){
 
 const resultado = sum7(arrayNumeros);
 console.log(resultado);
+
+//Mirar porque siempre da false
