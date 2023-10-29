@@ -24,12 +24,27 @@ let linea = "";
 //      console.log(linea);
 // }
 
-for (let i = 0; i < numero; i++) {
-  linea += "*";
+// for (let i = 0; i < numero; i++) {
+//   linea += "*";
 
-  for (let j = 0; j < numero -i -1; j++){
-    linea += " ";
-  }
+//   console.log(linea);
+// }
 
-  console.log(linea);
-}
+/*
+Entera la pirámide
+*//* NO SALE CON LET = 5 DA SIEMPRE LA MISMA PIRAMIDE*/ 
+
+// let num = 5;
+// for (let i = 0; i < num; i++) {
+
+//   let linea = "";
+//   for (let k = 0; k < num - i - 1; k++) {
+//     linea += " ";
+//   }
+
+//   linea += "**";
+//   for (let j = 0; j < i * 2; j++) {
+//     linea += "*";
+//   }
+//   console.log(linea);
+// }
