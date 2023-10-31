@@ -15,7 +15,7 @@ function sumar(listado){
 
 
 /**
- * Devuelve la multiplicacio de todos los elementos del array listado.
+ * Devuelve la multiplicacion de todos los elementos del array listado.
  */
 
 function multiplicar(listado){

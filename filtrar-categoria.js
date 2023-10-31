@@ -46,17 +46,19 @@ const productos = [
 ];
 
 function filtrarPorCategoria(productos, categoria) {
-  const productosFiltrados = []
+  const productosFiltrados = [];
+
   for (let i = 0; i < productos.length; i++) {
     if (productos[i].categoria === categoria) {
-      productosFiltrados[productosFiltrados.length] = productos[i];
+      productosFiltrados.push(productos[i]);
     }
   }
   return productosFiltrados;
 }
 
 
-const categoriaDeseada = "joyeria";
-const productosFiltrados = filtrarPorCategoria(productos, categoriaDeseada);
+console.log(filtrarPorCategoria(productos, "bicicleta"));
+console.log(filtrarPorCategoria(productos, "videojuegos"));
+console.log(filtrarPorCategoria(productos, "joyeria"));
 
-console.log(productosFiltrados);
+
