@@ -41,7 +41,9 @@ function resta(a, b) {
 }
 
 function contar(secuencia) {
-  // escribe tu codigo aqui
+  for (let i = 0; i > secuencia.length; i++){
+    
+  }
 }
 
 console.log(contar(secuenciaUno)); // debe mostrar "suma"
