@@ -16,8 +16,29 @@ const jugadasDos = [1, 3, 2, 3, 4, 1, 1, 2, 2, 3, 3, 4, 4, 1, 4, 2];
 
 function comprobarPelotas(jugadas) {
   let p = new Promise(function (resolve, reject) {
-    // escribir codigo aqui
+        // Contador para cada tipo de pelota
+    const contadorPelotas = {};
+
+    // Recorremos las jugadas
+    for (let i = 0; i < jugadas.length; i++) {
+      const pelota = jugadas[i];
+
+      // Verificamos si la pelota ya se ha usado 5 veces
+      if (contadorPelotas[pelota]) {
+        contadorPelotas[pelota]++;
+        if (contadorPelotas[pelota] > 5) {
+          reject(pelota);
+          return;
+        }
+      } else {
+        contadorPelotas[pelota] = 1;
+      }
+    }
+
+    // Si llegamos aquí, todas las pelotas son válidas
+    resolve("Pelotas ok");
   });
+ 
 
   return p;
 }
