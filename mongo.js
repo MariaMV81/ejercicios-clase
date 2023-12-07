@@ -74,6 +74,8 @@ async function migrarClientes() {
   );
 
   }
+
+  
 //Migrar Empleados-------------------------------------------------------------------------------------------------------------------------
 async function migrarEmpleados() {
   const collection = mongoDatabase.collection("empleados");
